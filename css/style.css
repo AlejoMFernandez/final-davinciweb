@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* MARGENES GENERALES */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0px 0px 20px;
+}
+
+/* GENERALES */
+h1{
+    font-size: 0px;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 16px;
+    color: #898805;
+    text-transform: uppercase;
+}
+h3{
+    font-weight: 500;
+    font-size: 12px;
+    color: #898805;
+    text-transform: uppercase;
+}
+.line{
+    width: 120px;
+    height: 1px;
+    background-color: #898805;
+}
+.titles{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/* HEADER - HEADER */
+.top{
+    background-image: url("../img/arc2.jpg");
+    background-position: center bottom;
+    height: 75vh;
+}
+
+.top-excursiones{
+    background-image: url("../img/excursiones.jpg");
+    background-position: center bottom;
+    height: 65vh;
+}
+
+.top-gastronomia{
+    background-image: url("../img/gastronomia.jpg");
+    background-position: center bottom;
+    height: 65vh;
+}
+
+.top-hoteles{
+    background-image: url("../img/hoteles.jpg");
+    background-position: center bottom;
+    height: 65vh;
+}
+
+/* Pestaña que esta abierta */
+#open{
+    font-weight: 800;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 30px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-weight: 500;
+}
+
+/* MENU 2 */
+.menu{
+    background-color: #181413;
+    padding: 5px;
+}
+
+.menu nav{
+    margin: 20px;
+}
+
+.menu nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+}
+
+/* BODY  */
+body{
+    background-color: #3b3438;
+}
+
+/* MAIN */
+main{
+    background-image: linear-gradient(#221c1b, #2d272a);
+    color: white;
+    padding-top: 30px;
+}
+
+.main-2{
+    background-image: linear-gradient( #131011, #2d272a);
+}
+
+.section-1 p, .section-3 p{
+    margin: 10px;
+    font-size: 14px;
+}
+
+.line{
+    margin: 5px;
+}
+
+/* section-0 - section-0 */
+.noticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noticia{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.noticia:hover{
+    transform: scale(1.05);
+}
+
+.noticias .noticia img, .noticias .noticia video{
+    width: 400px;
+    height: 230px;
+    border:solid 5px #898805;
+}
+
+.noticias .noticia p{
+    font-size: 14px;
+    width: 400px;
+    margin: 10px;
+}
+
+.noticias .noticia h2{
+    margin: 10px;
+}
+
+.section-0-itinerario .itinerario .punto img{
+    margin-block: 10px;
+    width: 200px;
+}
+
+.itinerario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.punto:hover{
+    transform: scale(1.05);
+}
+
+.punto{
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.punto p{
+    font-size: 12px;
+}
+
+/* section-1 - section-1 */
+/* HOME */
+.section-1{
+    margin-inline: 100px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* EXCURSIONES */
+.section-1-excursiones{
+    text-align: center;
+}
+
+.excursiones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.excursion{
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.excursion img{
+    width: 221px;
+    margin: 5px;
+}
+
+.excursion p{
+    font-size: 12px;
+    margin: 10px;
+    margin-inline: 50px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.boton a{
+    text-decoration: none;
+    color: #131011;
+    font-size: 14px;
+    background-color: #898805;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.boton-mas{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.boton-mas a{
+    text-decoration: none;
+    color: #131011;
+    font-size: 14px;
+    background-color: #898805;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.boton a:hover{
+    background-color:rgb(161, 161, 8);
+}
+
+/* GASTRONOMIA */
+.comidas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comida{
+    width: 250px;
+    margin-top: 40px;
+    margin-inline: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.comida:hover{
+    transform: scale(1.1);
+}
+
+.comidas .comida img{
+    width: 180px;
+}
+
+.comidas .comida h3{
+    margin: 5px;
+}
+
+.comidas .comida p{
+    margin: 8px;
+    font-size: 14px;
+    margin-inline: 20px;
+}
+
+
+
+/* section-2 - section-2 */
+/* HOME */
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    height: 550px;
+}
+
+.galeria img{
+    margin: 15px;
+    transition: scale 0.2s ease-in-out;
+}
+
+.galeria img:hover{
+    scale: 1.05;
+}
+
+/* EXCURSIONES */
+.evento{
+    padding: 20px;
+    display: flex;
+    padding-inline: 100px;
+}
+
+.evento div img{
+    width: 350px;
+}
+
+.evento div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.evento div h3, .evento div h2, .evento div p{
+    margin: 5px;
+}
+
+.evento div p{
+    font-size: 14px;
+}
+
+/* GASTRONOMIA */
+.restaurantes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.restaurant{
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant img{
+    width: 240px;
+}
+.restaurant .line{
+    margin-top: 10px;
+}
+.restaurant p{
+    margin: 10px;
+    font-size: 14px;
+    margin-inline: 40px;
+}
+
+/* section-3 - section-3 */
+.section-3{
+    padding-inline: 100px;
+    text-align: center;
+    align-items: center;
+    background-color: #221c1b;
+}
+
+.section-3 .titles h2{
+    margin-top: 20px;
+}
+
+.historicos{
+    display: flex;
+    margin: 40px;
+}
+
+.procerimg{
+    width: 200px;
+    height: 280px;
+}
+
+.procer{
+    margin-bottom: 20px;
+}
+
+.procer p{
+    font-size: 13px;
+    padding-inline: 35px;
+    padding-top: 5px;
+}
+
+/* section-4 - section-4 */
+.section-4{
+    text-align: center;
+}
+
+.section-4 iframe{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+/* FOOTER - FOOTER */
+footer{
+    background-color:#221c1b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footercontent{
+    margin: 40px;
+}
+
+.footer-l{
+    display: flex;
+}
+
+.footer-l ul{
+    list-style: none;
+    margin-right: 50px;
+}
+
+.footer-l ul li{
+    margin: 10px;
+}
+
+.footer-r img{
+    margin: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-r img:hover{
+    transform: scale(1.1);
+}
+
+/* FORMULARIO */
+.formulario{
+    padding: 30px;
+}
+
+.contact-form {
+    background-color: #2d272a;
+    padding: 20px;
+    margin: auto;
+    max-width: 600px;
+    border: 3px solid #898805;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #898805;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #898805;
+    background-color: #3b3438;
+    color: white;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form button {
+    background-color: #898805;
+    color: #131011;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: rgb(161, 161, 8);
+}
+
+/* Estilos para el bloque de información */
+.info {
+    margin-top: 50px;
+    background-color: #2d272a;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info p {
+    margin: 0;
+    color: #ffffff;
+    margin: 2px;
+    font-size: 18px;
+}
+
+/* AGRADECIMIENTO */
+.title-agradecimiento{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+}
